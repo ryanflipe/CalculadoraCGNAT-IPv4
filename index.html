@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de CGNAT - IPv4</title>
+    <script src="calcular.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form name="form" class="formin">
+
+        <h1>Calculadora de CGNAT<br>para IPv4</h1>
+
+        <input type="text" name="IP_Privado" placeholder="IP Privado" class="inputs">
+        <br>
+        <br>
+        <input type="text" name="IP_Publico" placeholder="IP Público" class="inputs">
+        <br>
+        <br>
+        <input type="button" name="calcular" value="Calcular" class="btn" onclick="calc()">
+
+        <input type="button" name="relatorio" value="Relatorio" class="btn" onclick="rel()">
+
+    </form>
+
+    <br><br><br>
+
+    <form name="resultado" class="formout">
+        <p class="linha">IPs Privados: </p>
+        <p class="linha" id="IPsPrivadosApresentacao"></p>
+        <br>
+        <br>
+        <p class="linha">Públicos: </p>
+        <p class="linha" id="IPsPublicosApresentacao"></p>
+        <br>
+        <br>
+        <p class="linha">Quantidade de IPs Privados por IPs Públicos: </p>
+        <p class="linha" id="QtdIPprivPpub"></p>
+        <br>
+        <br>
+        <p class="linha">Quantidade de portas por IP: </p>
+        <p class="linha" id="QtdPortas"></p>
+    </form>
+</body>
+
+</html>
